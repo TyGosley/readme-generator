@@ -138,7 +138,22 @@ const questions = [
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    return new Promise((resolve, reject) => {
+        // create path to folder and make README
+        fs.writeFile('./dist/README.md', data, err => {
+        // if there is an err, reject promise and send err to catch() method
+            if (err) {
+                reject (err);
+                return;
+            }
+            resolve({
+                ok: true, 
+                message: console.log('Success! Your README has been created.  Please navigate to the "dist" folder to find your new README.')
+            });
+        })
+    })
+}
 
 // TODO: Create a function to initialize app
 function init() {}
