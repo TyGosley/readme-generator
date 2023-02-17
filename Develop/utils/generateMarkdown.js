@@ -92,9 +92,7 @@ GitHub: https://github.com/$${data.github}
 Email: ${data.email}
 
 ## Credits
-
-
-
+${data.name}
 `;
 }
 
