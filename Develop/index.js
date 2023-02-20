@@ -1,10 +1,10 @@
-// TODO: Include packages needed for this application
+// ✅ Include packages needed for this application
 const fs = require("fs");
 const inquirer = require("inquirer");
-const generateMarkdown = ("./utils/generateMarkdown.js");
+const generateMarkdown = require("./utils/generateMarkdown.js");
 
 
-// TODO: Create an array of questions for user input
+// ✅ Create an array of questions for user input
 const questions = [
     {
         name: 'title',
@@ -98,12 +98,6 @@ const questions = [
         }
     },
     {
-        name: 'confirmContributors',
-        type: 'confirm',
-        message: 'Would you like to allow others to contribute',
-        default: true,
-    },
-    {
         name: 'contributing',
         type: 'input',
         message: 'How can others contribute to this project?',
@@ -137,7 +131,7 @@ const questions = [
     },
 ];
 
-// TODO: Create a function to write README file
+// ✅Create a function to write README file
 function writeToFile(fileName, data) {
     return new Promise((resolve, reject) => {
         // create path to folder and make README
@@ -155,18 +149,19 @@ function writeToFile(fileName, data) {
     })
 }
 
-// TODO: Create a function to initialize app
+// ✅ Create a function to initialize app
 function init() {
     return inquirer.prompt(questions); 
 }
 
-// Function call to initialize app
+// ✅ Function call to initialize app
 init()
 .then(data => {
-    return generateMarkdown(data);
+    const markdown = generateMarkdown(data);
+    return writeToFile("README.md", markdown);
 })
-.then(fileName => {
-    return writeToFile(fileName);
+.then(response => {
+    console.log(response.message);
 })
 .catch(err => {
     console.log(err);
