@@ -14,24 +14,24 @@ const questions = [
             if ( projectTitle) {
                 return true;
             } else {
-                console.log('Please enter an uniqutitle for your project.');
+                console.log('Please enter an unique title for your project.');
                 return false;
             }
         }
     },
-    {
-        name: 'name',
-        type: 'input',
-        message: 'Welcome to the README generator!  To begin, please provide your first and last name:',
-        validate: nameInput => {
-            if (nameInput) {
-                return true;
-            } else {
-                console.log('Please enter your name!');
-                return false;
-            }
-        }
-    },
+    // {
+    //     name: 'name',
+    //     type: 'input',
+    //     message: 'Welcome to the README generator!  To begin, please provide your first and last name:',
+    //     validate: nameInput => {
+    //         if (nameInput) {
+    //             return true;
+    //         } else {
+    //             console.log('Please enter your name!');
+    //             return false;
+    //         }
+    //     }
+    // },
     {
         name: 'github',
         type: 'input',
@@ -98,6 +98,12 @@ const questions = [
         }
     },
     {
+        name: 'license',
+        type: 'list',
+        message: 'Please indicate which license you would like to use:',
+        choices: ['MIT', 'GPLv3', 'Apache 2.0', 'No License']
+    },
+    {
         name: 'contributing',
         type: 'input',
         message: 'How can others contribute to this project?',
@@ -109,12 +115,6 @@ const questions = [
                 return false;
             }
         }
-    },
-    {
-        name: 'license',
-        type: 'list',
-        message: 'Please indicate which license you would like to use:',
-        choices: ['MIT', 'GPLv3', 'Apache 2.0', 'No License']
     },
     {
         name: 'tests',

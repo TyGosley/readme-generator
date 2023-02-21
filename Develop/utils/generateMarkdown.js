@@ -58,12 +58,14 @@ function generateMarkdown(data) {
   return `# ${data.title}
 
   ${renderLicenseBadge(data.licesne)}
-# README Generator
 
-## Description
+  ## Description
+
 ${data.description}
+___
 
 ## Table of Contents
+
 * [Installation](#installation)
 * [Usage](#usage)
 * [Licenses](#licenses)
@@ -71,29 +73,42 @@ ${data.description}
 * [Tests](#tests)
 * [Questions](#questions)
 
+___
+
 ## Installation
+
 ${data.installation}
+___
 
 ## Usage
+
 ${data.usage}
+___
 
 ## Licenses
 ${renderLicenseSection(data.licesne)}
 
+___
+
 ## Contributing
+
 ${data.contributing}
 
 ## Tests
+
 ${data.tests}
+___
 
 ## Questions
-Have questions about this project?  Reach out.
-GitHub: https://github.com/${data.github}
-Email: ${data.email}
 
-## Credits
-${data.name}
+Have questions about this project?  Please reach out to me.
+
+| GitHub Username                    | Email          |
+| --------                           | -------------- |
+| "https://github.com/${data.github}"  | ${data.email}  |
+
 `;
 }
+
 
 module.exports = generateMarkdown;
