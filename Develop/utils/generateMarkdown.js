@@ -6,7 +6,7 @@ function renderLicenseBadge(license) {
     case "":
       return "";
     default:
-      return `![badge](https://img.shields.io/badge/license-${license}-blue)`;
+      return `![License](https://img.shields.io/badge/license-${license}-blue)`;
   }
 }
 
@@ -57,7 +57,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.licesne)}
+  ${renderLicenseBadge(data.license)}
 
   ## Description
 
@@ -86,7 +86,7 @@ ${data.usage}
 ___
 
 ## Licenses
-${renderLicenseSection(data.licesne)}
+${renderLicenseSection(data.license)}
 
 ___
 
@@ -105,7 +105,7 @@ Have questions about this project?  Please reach out to me.
 
 | GitHub Username                    | Email          |
 | --------                           | -------------- |
-| "https://github.com/${data.github}"  | ${data.email}  |
+| https://github.com/${data.github}  | ${data.email}  |
 
 `;
 }

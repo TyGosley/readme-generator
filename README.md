@@ -1,6 +1,5 @@
 # Professional README Generator
 
-
 ## Description
 
 ___
@@ -28,13 +27,13 @@ ___
 
 ## Installation
 
-### Make sure you have the following before you begin:
+### Make sure you have the following before you begin
 
 * VS Code
 * Terminal or GitBash
 * Node.js
 
-### Steps to initialize the project:
+### Steps to initialize the project
 
 ___
 
@@ -47,7 +46,7 @@ ___
 ## Usage
 
 ___
-Once your software is downloaded and the Node packages are initialized it is time to begin. 
+Once your software is downloaded and the Node packages are initialized it is time to begin.
 
 In the correct directory, open up the terminal and use the command "node index.js".
 
@@ -60,8 +59,13 @@ If you are unsure what to include in your read me, please click on the link belo
 [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
 ## Screenshot
-<!-- TODO: add content -->
-![]
+
+![](./Develop/assets/readme-generatorss.png)
+
+## Demonstration
+<!-- TODO: add demo video -->
+___
+Click [Here]() to see a guided video of the README Generator being used.
 
 ## Licenses
 
