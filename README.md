@@ -54,7 +54,7 @@ You will be prompted with all the important questions that will autogenerate you
 
 Your README will be generated and placed in the "dist" folder.
 
-If you are unsure what to include in your read me, please click on the link below.
+If you are unsure what to include in your README, please click on the link below.
 
 [How to create a Professional README](https://coding-boot-camp.github.io/full-stack/github/professional-readme-guide)
 
