@@ -47,7 +47,7 @@ function renderLicenseSection(license) {
     case "":
       return "";
     default:
-      return `## Licenses
+      return `
       This project is covered under the ${license} license. To learn more about what this means, click the license button at the top.`;
   }
 }
@@ -57,7 +57,7 @@ function renderLicenseSection(license) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-  ${renderLicenseBadge(data.licesnes)}
+  ${renderLicenseBadge(data.licesne)}
 # README Generator
 
 ## Description
@@ -78,7 +78,7 @@ ${data.installation}
 ${data.usage}
 
 ## Licenses
-${renderLicenseSection(data.licesnes)}
+${renderLicenseSection(data.licesne)}
 
 ## Contributing
 ${data.contributing}
@@ -88,7 +88,7 @@ ${data.tests}
 
 ## Questions
 Have questions about this project?  Reach out.
-GitHub: https://github.com/$${data.github}
+GitHub: https://github.com/${data.github}
 Email: ${data.email}
 
 ## Credits
