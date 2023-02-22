@@ -60,12 +60,12 @@ If you are unsure what to include in your README, please click on the link below
 
 ## Screenshot
 
-![](./Develop/assets/readme-generatorss.png)
+![Screenshot of generated README](./Develop/assets/readme-generatorss.png)
 
 ## Demonstration
-<!-- TODO: add demo video -->
+
 ___
-Click [Here]() to see a guided video of the README Generator being used.
+Click [Here](https://drive.google.com/file/d/16oN0RzNv0zCeh1a4x0gU47kp9a4ltRtu/view?usp=share_link) to see a guided video of the README Generator being used.
 
 ## Licenses
 
