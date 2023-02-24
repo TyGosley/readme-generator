@@ -19,19 +19,6 @@ const questions = [
             }
         }
     },
-    // {
-    //     name: 'name',
-    //     type: 'input',
-    //     message: 'Welcome to the README generator!  To begin, please provide your first and last name:',
-    //     validate: nameInput => {
-    //         if (nameInput) {
-    //             return true;
-    //         } else {
-    //             console.log('Please enter your name!');
-    //             return false;
-    //         }
-    //     }
-    // },
     {
         name: 'github',
         type: 'input',
